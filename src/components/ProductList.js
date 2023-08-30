@@ -5,9 +5,11 @@ const ProductList = ({category,product}) => {
     return (
       <div>
         <div className="category-title">{category}</div>
-        {product.map((item) => (
-          <Product item={item} key={item.id} />
-        ))}
+        <div className="productList">
+          {product.map((item) => (
+            <Product item={item} key={item.id} />
+          ))}
+        </div>
       </div>
     );
 }
