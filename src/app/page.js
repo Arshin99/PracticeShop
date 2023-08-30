@@ -8,9 +8,7 @@ export default function Home() {
 
   return (
     <div>
-      {DATABASE.categories.map((category) => (
-        <Link href={`${category}`}>{category}</Link>
-      ))}
+      
     </div>
   );
 }
