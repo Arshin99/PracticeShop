@@ -124,3 +124,17 @@
     justify-content: space-around;
     align-items: center;
 }
+.SmallBtn{
+    width: 30px;
+    height: 30px;
+    font-size: 1.5rem;
+    margin: 10px;
+    color: white;
+}
+.PlusBtn
+{
+    background-color: green;
+}
+.MinusBtn{
+    background-color: red;
+}

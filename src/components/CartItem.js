@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/Image'
-import RemoveImage from '../assets/remove.png'
+import RemoveImage from "../assets/RemoveImage.png";
 import { useDispatch } from "react-redux";
 import { useCallback } from "react";
 import { add, decrease,remove } from "@/redux/cart";
@@ -31,13 +31,17 @@ const CartItem = ({item}) => {
           <p>Price : {price}</p>
         </div>
         <div>
-          <button onClick={AddToCart}>+</button>
+          <button onClick={AddToCart} className="SmallBtn PlusBtn">
+            +
+          </button>
           {count}
           {count > 1 ? (
-            <button onClick={DecreaseItem}>-</button>
+            <button onClick={DecreaseItem} className="SmallBtn MinusBtn">
+              -
+            </button>
           ) : (
             <button onClick={RemoveItem}>
-                <Image href={RemoveImage} width='20' height='20' alt='X'/>
+              <Image href={RemoveImage} width="30" height="30" alt="X" />
             </button>
           )}
         </div>
