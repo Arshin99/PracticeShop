@@ -15,9 +15,9 @@ const ProductPage = ({item}) => {
             <h3 className="text ProductDetail">Price = {price}$</h3>
             <h3 className="text ProductDetail">Category = {category}</h3>
             <h3 className="text ProductDetail">Size = {size}</h3>
-            <Provider store={store}>
+            
             <AddButton product={item} />
-            </Provider>
+            
           </div>
           <Image
             src={image}
