@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/Image'
 import Link from 'next/Link'
 
+
 const Product = ({item}) => {
     return (
       <div className="product-detail">
@@ -20,6 +21,7 @@ const Product = ({item}) => {
           height="20"
           width="80"
         />
+        
       </div>
     );
 }

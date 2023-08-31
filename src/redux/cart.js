@@ -8,7 +8,14 @@ const cart = createSlice({
     },
     reducers: {
         add : (state,action) => {
-            
+            const {payload} = action
+            const index = state.cart.findIndex(item => item.id===payload.id)
+            const IsNotFound = index===-1
+            if (IsNotFound) {
+              state.cart.push({...payload, count:1});
+            } else {
+              state.cart[index].count += 1;
+            }
         },
         remove : () => {},
         decrease : () => {},
@@ -16,5 +23,5 @@ const cart = createSlice({
     }
 })
 
-export const {} = cart.actions
+export const {add} = cart.actions
 export default cart.reducer

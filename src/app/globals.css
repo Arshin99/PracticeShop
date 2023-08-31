@@ -103,3 +103,11 @@
 .cart-logo{
     margin-right: 5px;
 }
+.addBtn{
+    width: 130px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    background-color: #4FE100;
+    color: aliceblue;
+    margin-top: 100px;
+}

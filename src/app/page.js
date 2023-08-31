@@ -1,3 +1,4 @@
+
 import Image from 'next/image'
 import {DATABASE} from '@/data/database'
 import {filterByCategory} from '@/utils/filterByCategory'
