@@ -95,3 +95,11 @@
 .Link:hover{
     background-color: #00C1FF;
 }
+.cart-logo-container
+{
+    display: flex;
+    justify-content: space-between;
+}
+.cart-logo{
+    margin-right: 5px;
+}
