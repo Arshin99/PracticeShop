@@ -25,10 +25,10 @@ const CartItem = ({item}) => {
 
     return (
       <div className="cartItem">
-        <Image href={image} width="100" height="25" alt="item Image" />
+        <Image src={image} width="100" height="25" alt="item Image" />
         <div>
           <h2>{name}</h2>
-          <p>Price : {price}</p>
+          <p>Price : {price}$</p>
         </div>
         <div>
           <button onClick={AddToCart} className="SmallBtn PlusBtn">
@@ -40,8 +40,8 @@ const CartItem = ({item}) => {
               -
             </button>
           ) : (
-            <button onClick={RemoveItem}>
-              <Image href={RemoveImage} width="30" height="30" alt="X" />
+            <button onClick={RemoveItem} className="SmallBtn">
+              <Image src={RemoveImage} width="30" height="30" alt="X" />
             </button>
           )}
         </div>

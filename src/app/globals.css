@@ -130,6 +130,7 @@
     font-size: 1.5rem;
     margin: 10px;
     color: white;
+    border-radius: 10px;
 }
 .PlusBtn
 {
@@ -137,4 +138,24 @@
 }
 .MinusBtn{
     background-color: red;
+}
+.HomePage
+{
+    display: flex;
+    justify-content: space-between;
+}
+.resetBtn{
+    width: 150px;
+    background-color: #F57596;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 20px 40px;
+}
+.Home-Title{
+    font-size: 3rem;
+    padding: 20px;
+    color: #06A6B1;
+}
+.Home-desc{
+    padding: 20px;
 }

@@ -6,17 +6,7 @@ const cart = createSlice({
   name: "cart",
   initialState: {
     userId: 1,
-    cart: [
-      {
-        id: 1,
-        name: "Blue Nike",
-        category: SHOE,
-        price: 150,
-        size: "45",
-        count: 3,
-        image: BlueNike,
-      },
-    ],
+    cart: [],
   },
   reducers: {
     add: (state, action) => {
@@ -39,9 +29,11 @@ const cart = createSlice({
       const index = state.cart.findIndex((item) => item.id === payload.id);
       state.cart[index].count-=1;
     },
-    reset: () => {},
+    reset: (state) => {
+      state.cart.length = 0
+    },
   },
 });
 
-export const { add, decrease, remove} = cart.actions;
+export const { add, decrease, remove, reset } = cart.actions;
 export default cart.reducer
