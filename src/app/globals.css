@@ -159,3 +159,11 @@
 .Home-desc{
     padding: 20px;
 }
+.cartUtils{
+    display: flex;
+    justify-content: space-between;
+}
+.totalPrice{
+    padding: 5px;
+    margin: 20px 40px;
+}
