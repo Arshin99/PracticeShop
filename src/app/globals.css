@@ -198,3 +198,32 @@
     margin: 10px;
     border-radius: 20px;
 }
+.purchaseBtn{
+    width: 150px;
+    background-color: #4FE100;
+    color: #1B2365;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 20px 40px;
+}
+.emptyCart{
+    font-size: 1.5rem;
+    margin: 20px;
+}
+.search-container{
+    position: relative;
+}
+.SearchResults{
+    position: absolute;
+    width: 100%;
+}
+.search-result{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}
+.search-result:hover{
+    background-color: #00C1FF;
+}

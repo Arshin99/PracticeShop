@@ -11,7 +11,7 @@ const HistoryList = ({list}) => {
         {items.map((item) => (
           <HistoryItem item={item} />
         ))}
-        <div>Total Price : {totalPrice}</div>
+        <div>Total Price : {totalPrice}$</div>
       </div>
     );
 }

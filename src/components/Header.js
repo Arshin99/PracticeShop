@@ -4,6 +4,7 @@ import cartImage from '../assets/cart.jpg'
 import Link from "next/Link";
 import Image from 'next/Image'
 import {useSelector} from 'react-redux'
+import Search from './Search'
 
 const Header = () => {
 
@@ -22,6 +23,7 @@ const Header = () => {
             </Link>
           ))}
         </div>
+        <Search/>
         <div className="cartLink-container">
           <Link href={"/history"} className="Link">
             Shopping History

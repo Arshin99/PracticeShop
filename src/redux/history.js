@@ -9,20 +9,7 @@ const history = createSlice({
     {
         userId: 1,
         historyCart: [
-            {
-                id: 1,
-                items: [
-                    {
-                    name: "Black School Bag",
-                    category: BAG,
-                    price: 200,
-                    size: "Average",
-                    image: BlackBag,
-                    count: 2
-                    }
-                ],
-                totalPrice: 400,
-                }
+            
             ],
     }
   ],

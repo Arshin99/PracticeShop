@@ -12,6 +12,9 @@ const Page = () => {
 
     const totalPrice = useMemo(() => CalculatePrice(cart), [cart]);
     
+
+    const isNotEmptyCart = cart.length !== 0
+
     const dispatch = useDispatch();
 
     const EmptyCart = useCallback(() => {
@@ -19,22 +22,30 @@ const Page = () => {
     }, []);
 
     const Purchase = useCallback(() => {
+      
       dispatch(addToHistory({userId:1, items:cart, totalPrice: totalPrice}));
       dispatch(reset());
-    }, []);
+      alert('Purchased successfully !')
+      
+    }, [totalPrice,cart]);
 
     return (
       <div>
         {cart.map((item) => (
           <CartItem item={item} key={item.id} />
         ))}
+        {isNotEmptyCart ? 
         <div className="cartUtils">
           <button onClick={EmptyCart} className="resetBtn">
             Empty Your Cart
           </button>
-          <button onClick={Purchase}>Purchase</button>
-          <div className="totalPrice"> Total Price = {totalPrice}</div>
-        </div>
+          <button onClick={Purchase} className="purchaseBtn">
+            Purchase
+          </button>
+          <div className="totalPrice"> Total Price = {totalPrice}$</div>
+        </div>:
+        <div className='emptyCart'>Your Cart is currently empty</div>}
+        
       </div>
     );
 }
