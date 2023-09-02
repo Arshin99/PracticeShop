@@ -22,9 +22,17 @@ const Header = () => {
             </Link>
           ))}
         </div>
-        <div>
+        <div className="cartLink-container">
+          <Link href={"/history"} className="Link">
+            Shopping History
+          </Link>
           <Link className="Link cart-logo-container" href={"/cart"}>
-            <Image src={cartImage} width='30' height='30' className='cart-logo'/>
+            <Image
+              src={cartImage}
+              width="30"
+              height="30"
+              className="cart-logo"
+            />
             Cart ({AllCounts})
           </Link>
         </div>

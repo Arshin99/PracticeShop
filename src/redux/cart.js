@@ -1,6 +1,6 @@
 import {createSlice} from '@reduxjs/toolkit'
-import SHOE from '@/data/database'
-import BlueNike from "../assets/BlueNike.jpg";
+
+
 
 const cart = createSlice({
   name: "cart",
