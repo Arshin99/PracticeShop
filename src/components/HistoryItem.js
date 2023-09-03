@@ -11,7 +11,7 @@ const HistoryItem = ({item}) => {
           <p>Size : {size}</p>
         </div>
         <div>
-          <p>Price : {price}</p>
+          <p>Price : {price}$</p>
           <p>Count : {count}</p>
         </div>
       </div>

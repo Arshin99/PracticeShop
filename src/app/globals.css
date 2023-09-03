@@ -19,6 +19,8 @@
 }
 .productList{
     display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 33.333333%;
 }
 .product-detail
 {
