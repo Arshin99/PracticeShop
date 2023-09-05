@@ -13,7 +13,7 @@ const Header = () => {
 
     return (
       <div className="Header">
-        <div>
+        <div className='headerLinks'>
           <Link className="Link" href={"/"}>
             Home
           </Link>
