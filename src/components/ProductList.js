@@ -1,7 +1,11 @@
-import React from 'react'
+'use client'
 import Product from './Product'
+import {useState} from 'react'
 
 const ProductList = ({category,product}) => {
+
+
+  
     return (
       <div>
         <div className="category-title">{category}</div>

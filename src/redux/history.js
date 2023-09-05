@@ -13,6 +13,7 @@ const history = createSlice({
             ],
     }
   ],
+  
   reducers: {
     addToHistory : (state,action) => {
       const {payload} = action

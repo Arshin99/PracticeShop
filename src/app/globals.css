@@ -60,6 +60,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 .ProductPage
 {
@@ -228,4 +229,55 @@
 }
 .search-result:hover{
     background-color: #00C1FF;
+}
+.comment-container
+{
+    display: flex;
+    border: black 1px solid;
+    padding: 5px;
+    margin: 20px;
+    align-items: center;
+    border-radius: 15px;
+}
+.commentSection
+{
+    width: 800px;
+    border: grey solid 2px;
+    margin: 20px;
+    align-items: center;
+    background-color: #F7F199;
+    border-radius: 20px;
+}
+.userSection
+{
+    display: flex;
+    align-items: center;
+    margin: 10px 30px;
+}
+.username{
+    margin: 10px 20px;
+}
+.comment{
+    margin-left: 70px;
+}
+.userPhoto{
+    border-radius: 50%;
+}
+.AddComment-container{
+    padding: 15px;
+    margin: 20px;
+    border: #4E4D32 1px solid;
+    border-radius: 10px;
+}
+.formItem{
+    margin-top: 5px;
+}
+.comment-title{
+    font-size: 1.3rem;
+}
+.addCommentBtn{
+    width: 200px;
+    padding: 5px;
+    background-color: #1BC3A2;
+    border-radius: 10px;
 }
