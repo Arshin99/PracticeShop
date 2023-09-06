@@ -331,3 +331,20 @@ textarea {
     padding: 8px;
     border-radius: 20px;
 }
+.each-slide-effect > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 350px;
+  background-color: #CFFFFA;
+}
+
+.slideshow-title
+{
+    margin: 30px 60px;
+    font-size: 2rem;
+    color: #0013A1;
+}
+.slideshow{
+    
+}
