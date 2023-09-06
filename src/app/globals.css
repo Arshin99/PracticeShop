@@ -238,6 +238,10 @@
 .search-result:hover{
     background-color: #00C1FF;
 }
+.SearchTitle{
+    color: white;
+    margin: 10px;
+}
 .comment-container
 {
     display: flex;
