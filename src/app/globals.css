@@ -8,8 +8,7 @@
 }
 .headerLinks
 {
-    display: flex;
-    align-items: center;
+    
 }
 .HomePage{
     width: 100%;
@@ -95,6 +94,7 @@
 .Header
 {
     display: flex;
+    position: relative;
     justify-content: space-between;
     background-color: #0F21C0;
     padding: 10px;
@@ -290,4 +290,20 @@
 }
 textarea {
   resize: none;
+}
+.category-links
+{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    background-color: #7083BA;
+    width: 150px;
+    margin-left: 0;
+}
+.menu
+{
+    display: flex;
+    cursor: pointer;
+    width: 100px;
+    justify-content: space-between;
 }

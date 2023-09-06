@@ -11,7 +11,7 @@ export const SHOE = 'Shoes';
 export const BAG = 'Bags';
 export const SHIRT = 'Shirts';
 
-export const CATEGORIES = [SHOE,BAG,SHIRT]
+export const CATEGORIES = [SHOE, BAG, SHIRT];
 
 export const PRODUCTS = [
   {
