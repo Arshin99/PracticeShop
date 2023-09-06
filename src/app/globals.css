@@ -309,3 +309,21 @@ textarea {
     justify-content: space-between;
     align-items: center;
 }
+.homeBtns
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 150px;
+}
+.about
+{
+    background-color: #00A155;
+}
+.contact{
+    background-color: #4FE100;
+}
+.btn {
+    padding: 8px;
+    border-radius: 20px;
+}
